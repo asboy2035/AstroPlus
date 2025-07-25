@@ -1,8 +1,16 @@
 {
   "name": "astro-plus",
-  "version": "0.0.0",
-  "private": true,
+  "description": "App with all the planets!",
+  "author": {
+    "url": "https://asboy2035.com/",
+    "email": "ash@asboy2035.com",
+    "name": "ash"
+  },
+  "version": "1.0.0",
+  "private": false,
+  "keywords": ["astronomy", "vue"],
   "type": "module",
+
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
@@ -10,6 +18,7 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build"
   },
+
   "dependencies": {
     "@iconify/vue": "^5.0.0",
     "pinia": "^3.0.3",
