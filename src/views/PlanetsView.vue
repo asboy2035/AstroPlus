@@ -5,6 +5,11 @@
   import SidebarItem from '@/components/sidebar/SidebarItem.vue'
   import PlanetSelector from '@/components/planetSelector/PlanetSelector.vue'
   import TemperatureBanner from '@/components/TemperatureBanner.vue'
+  import { usePlanetStore } from '@/store/planets'
+  import { storeToRefs } from 'pinia'
+
+  const planetStore = usePlanetStore()
+  const { selectedPlanet } = storeToRefs(planetStore)
 </script>
 
 <template>
@@ -25,16 +30,20 @@
     </a>
   </Sidebar>
 
-  <VStack class="planetInfo">
-    <img src="/planets/mars.png" alt="Planet" class="planetImage">
+  <VStack v-if="selectedPlanet" class="planetInfo">
+    <img :src="selectedPlanet.image.png" :alt="selectedPlanet.name" class="planetImage">
 
     <VStack class="planetInfoText">
-      <h1 class="planetTitle">Mars</h1>
-      <h3 class="planetSubtitle">The 5th planet of the solar system.</h3>
+      <h1 class="planetTitle">{{ selectedPlanet.name }}</h1>
+      <p class="planetSubtitle">{{ selectedPlanet.description }}</p>
     </VStack>
   </VStack>
 
-  <TemperatureBanner class="temp" :temp="38" />
+  <TemperatureBanner
+    v-if="selectedPlanet"
+    class="temp"
+    :temp="parseInt(selectedPlanet.temperature)"
+  />
 
   <PlanetSelector class="planetPicker" />
 
@@ -60,12 +69,14 @@
     .planetImage
       width: 50vw
       max-width: 80vh
+      min-height: 40vh
       height: auto
       position: relative
       z-index: 10
 
     .planetInfoText
-      margin-top: -15rem
+      position: relative
+      margin-top: -18rem
       z-index: 11
 
       .planetTitle
@@ -73,14 +84,15 @@
 
       .planetSubtitle
         font-family: fonts.$standard
-        margin-top: -2rem
+        margin-top: -1.5rem
         margin-left: 0.75rem
-        font-size: 2rem
+        font-size: 1.2rem
         opacity: 0.4
+        max-width: 30rem
 
   .temp
     position: fixed
-    top: 70vh
+    top: 60vh
     left: 50vw
     z-index: 20
 

@@ -23,7 +23,7 @@
   .temperatureBanner
     align-items: center
     background: colors.$backgroundTertiary
-    backdrop-filter: blur(2rem) saturate(150%) brightness(200%)
+    backdrop-filter: blur(2rem) saturate(150%) brightness(150%)
     border-radius: 2rem
     gap: 1.5rem
     padding: 0.75rem

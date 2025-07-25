@@ -2,34 +2,42 @@
   <div class="planetSelector">
     <div class="carousel">
       <div
-        v-for="(planet, index) in planets"
-        :key="index"
+        v-for="(planet, index) in carouselPlanets"
+        :key="planet.name"
         class="planet"
         :style="getPlanetStyle(index)"
+        @click="selectPlanet(planet.name)"
       >
-        <img :src="planet.icon" :alt="planet.name" />
+        <img :src="planet.image.svg" :alt="planet.name" />
       </div>
-      <div class="centerPlanet">
-        <img :src="centerPlanet.icon" :alt="centerPlanet.name" />
+      <div v-if="selectedPlanet" class="centerPlanet">
+        <img :src="selectedPlanet.image.svg" :alt="selectedPlanet.name" />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const planets = [
-  { name: "Mercury", icon: "/icons/mercury.svg" },
-  { name: "Venus", icon: "/icons/venus.svg" },
-  { name: "Mars", icon: "/icons/mars.svg" },
-  { name: "Jupiter", icon: "/icons/jupiter.svg" },
-  { name: "Saturn", icon: "/icons/saturn.svg" },
-  { name: "Uranus", icon: "/icons/uranus.svg" },
-].reverse()
+import { usePlanetStore } from '@/store/planets'
+import { storeToRefs } from 'pinia'
+import { computed, onMounted } from 'vue'
 
-const centerPlanet = { name: "Earth", icon: "/icons/earth.svg" }
+const planetStore = usePlanetStore()
+const { planets, selectedPlanet } = storeToRefs(planetStore)
+const { selectPlanet } = planetStore
+
+onMounted(() => {
+  if (!selectedPlanet.value) {
+    selectPlanet('Earth')
+  }
+})
+
+const carouselPlanets = computed(() => {
+  return planets.value.filter(p => p.name !== selectedPlanet.value?.name).reverse()
+})
 
 function getPlanetStyle(index: number) {
-  const total = planets.length
+  const total = carouselPlanets.value.length
   const angleDeg = (index / (total - 1)) * 180 + 89
   const radius = 200
 
@@ -65,6 +73,11 @@ function getPlanetStyle(index: number) {
     top: 50%
     left: 50%
     transform-origin: center center
+    cursor: pointer
+    transition: all 0.2s ease-in-out
+
+    &:hover
+      transform: scale(1.1)
 
     img
       width: auto
