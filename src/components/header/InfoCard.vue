@@ -43,6 +43,7 @@
     display: flex
     flex-direction: column
     z-index: 6
+    user-select: none
 
     &::before
       content: ""
@@ -103,4 +104,5 @@
       width: 100%
       flex-grow: 1
       font-size: 2.5rem
+      text-align: center
 </style>

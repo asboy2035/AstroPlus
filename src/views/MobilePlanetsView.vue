@@ -55,7 +55,7 @@
   .mobilePlanetsView
     display: flex
     flex-direction: column
-    min-height: 100dvh
+    min-height: calc(100dvh - 2rem)
     overflow-y: scroll
     width: 100%
 
