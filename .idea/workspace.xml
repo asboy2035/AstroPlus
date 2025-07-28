@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3179672c-6731-4523-8143-7f7a8148e9f8" name="Changes" comment="new background image">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3179672c-6731-4523-8143-7f7a8148e9f8" name="Changes" comment="fix app background on mobile">
+      <change afterPath="$PROJECT_DIR$/screenshots/Main-Screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/ash/IdeaProjects/astro-plus/src/views",
+    "last_opened_file_path": "/Users/ash/IdeaProjects/astro-plus/screenshots",
     "list.type.of.created.stylesheet": "Sass",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -135,7 +136,7 @@
       <workItem from="1753720893655" duration="34000" />
       <workItem from="1753720963184" duration="23000" />
       <workItem from="1753721025586" duration="190000" />
-      <workItem from="1753721529222" duration="1237000" />
+      <workItem from="1753721529222" duration="1555000" />
     </task>
     <task id="LOCAL-00001" summary="add data!">
       <option name="closed" value="true" />
@@ -177,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753708541716</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix app background on mobile">
+      <option name="closed" value="true" />
+      <created>1753722823710</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1753722823710</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +198,7 @@
     <MESSAGE value="add mobile version" />
     <MESSAGE value="fix alignments and spacing" />
     <MESSAGE value="new background image" />
-    <option name="LAST_COMMIT_MESSAGE" value="new background image" />
+    <MESSAGE value="fix app background on mobile" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix app background on mobile" />
   </component>
 </project>
