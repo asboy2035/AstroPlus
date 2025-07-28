@@ -50,7 +50,7 @@
 
     <img
       class="appBackground"
-      src="/App-Background.png"
+      src="/AppBackground.svg"
       alt="Starry Sky"
     >
   </div>
