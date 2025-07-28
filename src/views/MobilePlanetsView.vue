@@ -99,7 +99,7 @@
     left: 0
     right: 0
     bottom: 0
-    width: 100vw
-    height: 100vh
+    min-width: 100vw
+    min-height: 100vh
     z-index: -2
 </style>
