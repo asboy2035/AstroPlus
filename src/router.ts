@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import PlanetsView from './views/PlanetsView.vue'
+import MainView from '@/pages/MainView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,7 +7,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'planets',
-      component: PlanetsView,
+      component: MainView,
     },
   ],
 })

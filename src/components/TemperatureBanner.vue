@@ -3,11 +3,15 @@
 
   defineProps<{
     temp: number
+    compact?: boolean
   }>()
 </script>
 
 <template>
-  <HStack class="temperatureBanner">
+  <HStack
+    class="temperatureBanner"
+    :class="{ compact: compact }"
+  >
     <div class="bannerTitle">
       <p>Temp</p>
     </div>
@@ -27,6 +31,16 @@
     border-radius: 2rem
     gap: 1.5rem
     padding: 0.75rem
+
+    &.compact
+      padding: 0.5rem
+
+      .bannerTitle
+        padding: 0.75rem 1rem
+        border-radius: 1.5rem
+
+      .temperatureValue
+        margin: 0 1rem
 
     .bannerTitle
       padding: 1.5rem

@@ -8,6 +8,5 @@
   .vStack
     display: flex
     flex-direction: column
-    flex-wrap: wrap
     gap: 0.25rem
 </style>

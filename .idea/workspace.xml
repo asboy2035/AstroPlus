@@ -4,25 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3179672c-6731-4523-8143-7f7a8148e9f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/neptune.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/planets/earth.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/planets/jupiter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/planets/mercury.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/planets/neptune.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/planets/saturn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/planets/uranus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/planets/venus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/planets.ts" afterDir="false" />
+    <list default="true" id="3179672c-6731-4523-8143-7f7a8148e9f8" name="Changes" comment="update meta">
+      <change afterPath="$PROJECT_DIR$/src/pages/MainView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/MobilePlanetsView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/saturn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/icons/saturn.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TemperatureBanner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TemperatureBanner.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/VStack.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/VStack.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/planetSelector/PlanetSelector.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/planetSelector/PlanetSelector.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/PlanetsView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PlanetsView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +64,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/ash/IdeaProjects/astro-plus/src/views",
     "list.type.of.created.stylesheet": "Sass",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -92,13 +86,16 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/components/header" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -141,11 +138,33 @@
       <updated>1743535360667</updated>
       <workItem from="1743535360668" duration="84000" />
       <workItem from="1753441399050" duration="2460000" />
-      <workItem from="1753443896829" duration="15138000" />
+      <workItem from="1753443896829" duration="28961000" />
     </task>
+    <task id="LOCAL-00001" summary="add data!">
+      <option name="closed" value="true" />
+      <created>1753461411336</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1753461411336</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update meta">
+      <option name="closed" value="true" />
+      <created>1753461603206</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1753461603206</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add data!" />
+    <MESSAGE value="update meta" />
+    <option name="LAST_COMMIT_MESSAGE" value="update meta" />
   </component>
 </project>

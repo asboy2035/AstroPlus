@@ -13,45 +13,47 @@
 </script>
 
 <template>
-  <Header />
+  <div class="planetsView">
+    <Header />
 
-  <Sidebar class="appSidebar">
-    <SidebarItem
-      title="Planets"
-      icon="solar:planet-3-line-duotone"
-      selected
+    <Sidebar class="appSidebar">
+      <SidebarItem
+        title="Planets"
+        icon="solar:planet-3-line-duotone"
+        selected
+      />
+
+      <a href="https://asboy2035.com">
+        <SidebarItem
+          title="Main Site"
+          icon="solar:home-angle-line-duotone"
+        />
+      </a>
+    </Sidebar>
+
+    <VStack v-if="selectedPlanet" class="planetInfo">
+      <img :src="selectedPlanet.image.png" :alt="selectedPlanet.name" class="planetImage">
+
+      <VStack class="planetInfoText">
+        <h1 class="planetTitle">{{ selectedPlanet.name }}</h1>
+        <p class="planetSubtitle">{{ selectedPlanet.description }}</p>
+      </VStack>
+    </VStack>
+
+    <TemperatureBanner
+      v-if="selectedPlanet"
+      class="temp"
+      :temp="parseInt(selectedPlanet.temperature)"
     />
 
-    <a href="https://asboy2035.com">
-      <SidebarItem
-        title="Main Site"
-        icon="solar:home-angle-line-duotone"
-      />
-    </a>
-  </Sidebar>
+    <PlanetSelector class="planetPicker" />
 
-  <VStack v-if="selectedPlanet" class="planetInfo">
-    <img :src="selectedPlanet.image.png" :alt="selectedPlanet.name" class="planetImage">
-
-    <VStack class="planetInfoText">
-      <h1 class="planetTitle">{{ selectedPlanet.name }}</h1>
-      <p class="planetSubtitle">{{ selectedPlanet.description }}</p>
-    </VStack>
-  </VStack>
-
-  <TemperatureBanner
-    v-if="selectedPlanet"
-    class="temp"
-    :temp="parseInt(selectedPlanet.temperature)"
-  />
-
-  <PlanetSelector class="planetPicker" />
-
-  <img
-    class="appBackground"
-    src="/App-Background.png"
-    alt="Starry Sky"
-  >
+    <img
+      class="appBackground"
+      src="/App-Background.png"
+      alt="Starry Sky"
+    >
+  </div>
 </template>
 
 <style scoped lang="sass">
@@ -67,7 +69,7 @@
     margin-top: -8rem
 
     .planetImage
-      width: 50vw
+      width: 60vw
       max-width: 80vh
       min-height: 40vh
       height: auto
@@ -110,4 +112,10 @@
     min-width: 100vw
     min-height: 100vh
     z-index: -2
+
+  @media (max-height: 60rem)
+    .planetInfo
+      position: fixed
+      z-index: 19
+      bottom: 2rem
 </style>
