@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3179672c-6731-4523-8143-7f7a8148e9f8" name="Changes" comment="fix app background on mobile">
-      <change afterPath="$PROJECT_DIR$/screenshots/Main-Screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="3179672c-6731-4523-8143-7f7a8148e9f8" name="Changes" comment="add readme" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,6 +78,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/screenshots" />
       <recent name="$PROJECT_DIR$/src/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -136,7 +134,7 @@
       <workItem from="1753720893655" duration="34000" />
       <workItem from="1753720963184" duration="23000" />
       <workItem from="1753721025586" duration="190000" />
-      <workItem from="1753721529222" duration="1555000" />
+      <workItem from="1753721529222" duration="1664000" />
     </task>
     <task id="LOCAL-00001" summary="add data!">
       <option name="closed" value="true" />
@@ -186,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753722823710</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add readme">
+      <option name="closed" value="true" />
+      <created>1753723114590</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1753723114590</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +205,7 @@
     <MESSAGE value="fix alignments and spacing" />
     <MESSAGE value="new background image" />
     <MESSAGE value="fix app background on mobile" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix app background on mobile" />
+    <MESSAGE value="add readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="add readme" />
   </component>
 </project>
